@@ -2,6 +2,8 @@
 
 This project is a backend service for managing mobile phone bookings. It provides APIs for booking, returning, and retrieving phones. It uses Java with Spring Boot, MySQL for the database, and Kafka for messaging.
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Q_6Rm4Tdh5g/0.jpg)](https://www.youtube.com/watch?v=Q_6Rm4Tdh5g)
+
 ## Table of Contents
 
 - [Requirements](#requirements)
