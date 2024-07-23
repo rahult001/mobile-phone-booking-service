@@ -84,6 +84,16 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
+        <dependency>
+        <!-- Flyway Dependency to manage and automate database migrations using versioned SQL scripts -->
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+            <version>10.16.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-mysql</artifactId>
+        </dependency>
         <!-- Spring Boot Test -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -112,6 +122,19 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <version>10.16.0</version>
+                <configuration>
+                    <url>jdbc:mysql://localhost:3306/phone_booking</url>
+                    <user>root</user>
+                    <password>password</password>
+                    <schemas>
+                        <schema>phone_booking</schema>
+                    </schemas>
+                </configuration>
             </plugin>
         </plugins>
     </build>
